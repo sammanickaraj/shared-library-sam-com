@@ -1,4 +1,4 @@
-def hello() {
+def call() {
 node {
         stage('Configuration Setup') {
             echo "Configuration setup"
