@@ -2,14 +2,13 @@ def call() {
 node {
         stage('Configuration Setup') {
             echo "Configuration setup"
-            echo "${random_var}"
         }
         stage('Testing Setup') {
-            echo "${testing_var}"
+            echo "Testing Setup"
         }
         stage('SonarQube scan') {
             echo "SonarQube Scan in progress"
-            echo "${env_testvar}"
+            echo "SonarQube scan"
         }
         stage('Copy Image') {
             echo "Copy Image"
