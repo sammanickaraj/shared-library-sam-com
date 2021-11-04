@@ -1,5 +1,6 @@
 def collectSourceCodeInfoDev(config) {
     checkout scm
+    printHello.staticJenkinsAgent
 }
 
 def call(Map<String, String> config = [:]) {
