@@ -1,5 +1,5 @@
 def collectSourceCodeInfoDev(config) {
-    echo "Hi Hello" 
+    checkout scm
 }
 
 def call(Map<String, String> config = [:]) {
