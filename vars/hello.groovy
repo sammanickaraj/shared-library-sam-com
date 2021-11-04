@@ -3,7 +3,9 @@ def collectSourceCodeInfoDev(config) {
 }
 
 def call(Map<String, String> config = [:]) {
+    node(any) {
     stage('Configuration Setup') {
         collectSourceCodeInfoDev(config)
+    }
     }
 }
