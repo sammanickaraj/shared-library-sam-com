@@ -1,3 +1,3 @@
-def staticJenkinsAgent() {
-    echo "Hi from print hello"
+def staticJenkinsAgent(config) {
+    echo "${config}"
 }
