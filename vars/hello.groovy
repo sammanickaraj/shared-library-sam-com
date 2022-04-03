@@ -1,5 +1,5 @@
 def call() {
-node {
+
         stage('Configuration Setup') {
             echo "Configuration setup"
         }
@@ -17,5 +17,4 @@ node {
          stage('Stage Image') {
             echo "Staging image"
         }
-    }
 }
