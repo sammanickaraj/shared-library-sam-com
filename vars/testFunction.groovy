@@ -11,5 +11,11 @@ def call(Map<String, String> config = [:] ) {
 }
 
 def collectSourceCode() {
-    checkout scm
+    def statusJenkinsAgent(closure) {
+        node(any) {
+            checkout scm
+        }
+    }
+ 
+    
 }
