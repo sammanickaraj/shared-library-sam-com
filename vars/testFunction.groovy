@@ -12,6 +12,9 @@ def call(Map<String, String> config = [:] ) {
             echo "name did not match"
         }
     }
+    stage('Random Stage') {
+        echo "Random Stage"
+    }
 }
 
 // def collectSourceCode() {
