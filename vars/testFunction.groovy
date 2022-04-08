@@ -2,7 +2,10 @@ def call(Map<String, String> config = [:] ) {
     stage('Configuration Setup') {
         echo "Hello Configuration setup"
         if (config.name == 'sam') {
-           checkout scm
+           node {
+               checkout scm
+           } 
+           
         }
         else {
             echo "name did not match"
