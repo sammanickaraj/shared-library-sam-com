@@ -5,7 +5,7 @@ def call(Map<String, String> config = [:] ) {
            node('built-in') {
                checkout scm
                def versionpom=readMavenPom(file: 'pom.xml').version
-               echo ${versionpom}
+               echo "${versionpom}"
            } 
            
         }
