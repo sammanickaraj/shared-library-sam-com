@@ -3,7 +3,6 @@ def call(Map<String, String> config = [:] ) {
         echo "Hello Configuration setup"
         if (config.name == 'sam') {
            node('built-in') {
-                label 'labelname'
                checkout scm
            } 
            
