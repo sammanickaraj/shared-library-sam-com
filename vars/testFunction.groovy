@@ -16,7 +16,10 @@ def call(Map<String, String> config = [:] ) {
         echo "Random Stage"
     }
     stage('Build') {
+    node {
         sh "mvn clean install"
+    } 
+        
     }
 }
 
