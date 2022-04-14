@@ -2,7 +2,7 @@ def call(Map<String, String> config = [:] ) {
     stage('Configuration Setup') {
         echo "Hello Configuration setup"
         if (config.name == 'sam') {
-           node('built-in') {
+           node('built-inn') {
                 label 'labelname'
                checkout scm
            } 
