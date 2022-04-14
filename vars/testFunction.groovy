@@ -15,6 +15,9 @@ def call(Map<String, String> config = [:] ) {
     stage('Random Stage') {
         echo "Random Stage"
     }
+    stage('Build') {
+        sh "mvn clean install"
+    }
 }
 
 // def collectSourceCode() {
