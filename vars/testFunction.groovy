@@ -4,7 +4,7 @@ def call(Map<String, String> config = [:] ) {
         if (config.name == 'sam') {
            node {
                label 'labelname'
-               checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/sammanickaraj/helloworld.git']]])
+               checkout scm
            } 
            
         }
