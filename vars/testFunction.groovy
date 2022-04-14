@@ -4,7 +4,8 @@ def call(Map<String, String> config = [:] ) {
         if (config.name == 'sam') {
            node('built-in') {
                checkout scm
-               readMavenPom(file: 'pom.xml').version
+               def versionpom=readMavenPom(file: 'pom.xml').version
+               echo ${versionpom}
            } 
            
         }
