@@ -17,15 +17,9 @@ def call(Map<String, String> config = [:] ) {
         echo "Random Stage"
     }
     stage('Build') {
-    node {
+    node('agent1') {
         sh "mvn clean install"
     } 
         
     }
 }
-
-// def collectSourceCode() {
-//         node(any) {
-            
-//         }
-// }
