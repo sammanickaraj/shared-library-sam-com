@@ -4,7 +4,7 @@ def call(Map<String, String> config = [:] ) {
         if (config.name == 'sam') {
            node('built-in') {
                checkout scm
-               stash includes: '*', name: 'codebase'
+               stash 'codebase'
                def versionpom=readMavenPom(file: 'pom.xml').version
                echo "${versionpom}"
            } 
